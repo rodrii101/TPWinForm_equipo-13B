@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AplicacionComercio
+namespace dominio
 {
-    public class Categoria
+    public class Marca
     {
-        public int IdCategoria { get; set; }
+        public int Id { get; set; }
         public string Descripcion { get; set; }
         public override string ToString()
         {

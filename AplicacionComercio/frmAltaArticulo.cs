@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
-
+using dominio;
+using negocio;
 namespace AplicacionComercio
 {
     public partial class frmAltaArticulo : Form

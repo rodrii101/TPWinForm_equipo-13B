@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Xml.Linq;
 
-namespace AplicacionComercio
+namespace negocio
 {
     public class AccesoDatos
     {

@@ -3,4 +3,6 @@
     <File Path=".editorconfig" />
   </Folder>
   <Project Path="AplicacionComercio/AplicacionComercio.csproj" Id="ca7c3b44-2e32-4849-86d7-119dc27ca57d" />
+  <Project Path="dominio/dominio.csproj" Id="5e4a2795-bde3-486c-8f4b-319f0cab4d4d" />
+  <Project Path="negocio/negocio.csproj" Id="40f8ba6f-8c6e-48fe-bb9b-6d20ac669355" />
 </Solution>
