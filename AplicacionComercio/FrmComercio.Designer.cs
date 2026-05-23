@@ -41,6 +41,7 @@
             this.lblCriterio = new System.Windows.Forms.Label();
             this.txtFiltradoAvanzado = new System.Windows.Forms.TextBox();
             this.btmFiltrarAvanzado = new System.Windows.Forms.Button();
+            this.btmGestionCategoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImageArticulos)).BeginInit();
             this.SuspendLayout();
@@ -169,11 +170,22 @@
             this.btmFiltrarAvanzado.UseVisualStyleBackColor = true;
             this.btmFiltrarAvanzado.Click += new System.EventHandler(this.btmFiltrarAvanzado_Click);
             // 
+            // btmGestionCategoria
+            // 
+            this.btmGestionCategoria.Location = new System.Drawing.Point(425, 338);
+            this.btmGestionCategoria.Name = "btmGestionCategoria";
+            this.btmGestionCategoria.Size = new System.Drawing.Size(158, 37);
+            this.btmGestionCategoria.TabIndex = 14;
+            this.btmGestionCategoria.Text = "Gestion Categoria";
+            this.btmGestionCategoria.UseVisualStyleBackColor = true;
+            this.btmGestionCategoria.Click += new System.EventHandler(this.btmGestionCategoria_Click);
+            // 
             // frmComercio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 458);
+            this.Controls.Add(this.btmGestionCategoria);
             this.Controls.Add(this.btmFiltrarAvanzado);
             this.Controls.Add(this.txtFiltradoAvanzado);
             this.Controls.Add(this.cboCriterio);
@@ -214,6 +226,7 @@
         private System.Windows.Forms.Label lblCriterio;
         private System.Windows.Forms.TextBox txtFiltradoAvanzado;
         private System.Windows.Forms.Button btmFiltrarAvanzado;
+        private System.Windows.Forms.Button btmGestionCategoria;
     }
 }
 

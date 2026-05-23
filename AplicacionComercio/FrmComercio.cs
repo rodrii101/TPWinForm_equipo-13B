@@ -215,5 +215,11 @@ namespace AplicacionComercio
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void btmGestionCategoria_Click(object sender, EventArgs e)
+        {
+            FrmCategoria categoria = new FrmCategoria();
+            categoria.ShowDialog();
+        }
     } 
 }
