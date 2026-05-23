@@ -37,5 +37,91 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
+        public void eliminar(int idMarcas)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("DELETE MARCAS WHERE Id = @id");
+                datos.setearParametro("@id", idMarcas);
+                datos.ejectuarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void modificarMarca(Marca marcas)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("UPDATE MARCAS SET Descripcion = @Descripcion WHERE Id = @Id");
+                datos.setearParametro("@Descripcion", marcas.Descripcion);
+                datos.setearParametro("@Id", marcas.Id);
+                datos.ejectuarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+        }
+
+        public int contarIdMarcas()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT MAX(Id) + 1 FROM MARCAS");
+                datos.ejectuarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    return Convert.ToInt32(datos.Lector[0]);
+                }
+
+                return -1;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void agregarMarca(Marca nuevaMarca)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("INSERT INTO MARCAS (Descripcion) VALUES (@Descripcion)");
+                datos.setearParametro("@Descripcion", nuevaMarca.Descripcion);
+                datos.ejectuarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+        }
     }
 }

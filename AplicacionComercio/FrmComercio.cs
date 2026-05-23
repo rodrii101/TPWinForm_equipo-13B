@@ -221,5 +221,11 @@ namespace AplicacionComercio
             FrmCategoria categoria = new FrmCategoria();
             categoria.ShowDialog();
         }
+
+        private void btmGestionMarca_Click(object sender, EventArgs e)
+        {
+            FrmMarca Marca = new FrmMarca();
+            Marca.ShowDialog();
+        }
     } 
 }
