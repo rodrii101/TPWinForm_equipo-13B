@@ -264,13 +264,14 @@ namespace negocio
             }
         }
 
-        public bool existeCodigo(string codigo)
+        public bool existeCodigo(string codigo, int id)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT Codigo FROM ARTICULOS WHERE Codigo = @Codigo");
+                datos.setearConsulta("SELECT Codigo FROM ARTICULOS WHERE Codigo = @Codigo AND Id != @id");
                 datos.setearParametro("@codigo", codigo);
+                datos.setearParametro("@id", id);
                 datos.ejectuarLectura();
 
                 if (datos.Lector.Read())

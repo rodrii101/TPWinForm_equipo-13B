@@ -40,7 +40,7 @@ namespace AplicacionComercio
                 if(articulo == null) 
                     articulo = new Articulo();
                 articulo.Codigo = txtCodigo.Text;
-                if (negocio.existeCodigo(txtCodigo.Text))
+                if (negocio.existeCodigo(txtCodigo.Text, articulo.Id))
                 {
                     MessageBox.Show("Codigo ya existente. Ingrese otro.");
                     return;
