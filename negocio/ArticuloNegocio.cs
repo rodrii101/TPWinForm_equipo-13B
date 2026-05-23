@@ -263,5 +263,30 @@ namespace negocio
                 throw ex;
             }
         }
+
+        public bool existeCodigo(string codigo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT Codigo FROM ARTICULOS WHERE Codigo = @Codigo");
+                datos.setearParametro("@codigo", codigo);
+                datos.ejectuarLectura();
+
+                if (datos.Lector.Read())
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
     }
 }

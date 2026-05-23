@@ -40,6 +40,11 @@ namespace AplicacionComercio
                 if(articulo == null) 
                     articulo = new Articulo();
                 articulo.Codigo = txtCodigo.Text;
+                if (negocio.existeCodigo(txtCodigo.Text))
+                {
+                    MessageBox.Show("Codigo ya existente. Ingrese otro.");
+                    return;
+                }
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Marca = (Marca)cbxMarca.SelectedItem;
