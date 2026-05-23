@@ -160,6 +160,11 @@ namespace AplicacionComercio
                 MessageBox.Show("Debe agregar una descripcion al articulo");
                 return true;
             }
+            if (string.IsNullOrEmpty(lboxImagen.Text))
+            {
+                MessageBox.Show("Debe agregar una URL");
+                return true;
+            }
 
   
             return false;
