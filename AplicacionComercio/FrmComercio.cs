@@ -227,5 +227,14 @@ namespace AplicacionComercio
             FrmMarca Marca = new FrmMarca();
             Marca.ShowDialog();
         }
+
+        private void btmVerDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvArticulo.CurrentRow.DataBoundItem;
+            
+            FrmVerDetalleArticulo detalle = new FrmVerDetalleArticulo(seleccionado);
+            detalle.ShowDialog();
+        }
     } 
 }

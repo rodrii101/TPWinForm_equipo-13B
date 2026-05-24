@@ -43,6 +43,7 @@
             this.btmFiltrarAvanzado = new System.Windows.Forms.Button();
             this.btmGestionCategoria = new System.Windows.Forms.Button();
             this.btmGestionMarca = new System.Windows.Forms.Button();
+            this.btmVerDetalle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImageArticulos)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +73,7 @@
             // 
             // btmAgregar
             // 
-            this.btmAgregar.Location = new System.Drawing.Point(29, 338);
+            this.btmAgregar.Location = new System.Drawing.Point(27, 338);
             this.btmAgregar.Name = "btmAgregar";
             this.btmAgregar.Size = new System.Drawing.Size(96, 37);
             this.btmAgregar.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             // btmModificar
             // 
-            this.btmModificar.Location = new System.Drawing.Point(161, 338);
+            this.btmModificar.Location = new System.Drawing.Point(150, 338);
             this.btmModificar.Name = "btmModificar";
             this.btmModificar.Size = new System.Drawing.Size(96, 37);
             this.btmModificar.TabIndex = 3;
@@ -92,7 +93,7 @@
             // 
             // btmEliminar
             // 
-            this.btmEliminar.Location = new System.Drawing.Point(291, 338);
+            this.btmEliminar.Location = new System.Drawing.Point(281, 338);
             this.btmEliminar.Name = "btmEliminar";
             this.btmEliminar.Size = new System.Drawing.Size(96, 37);
             this.btmEliminar.TabIndex = 4;
@@ -173,7 +174,7 @@
             // 
             // btmGestionCategoria
             // 
-            this.btmGestionCategoria.Location = new System.Drawing.Point(425, 338);
+            this.btmGestionCategoria.Location = new System.Drawing.Point(413, 338);
             this.btmGestionCategoria.Name = "btmGestionCategoria";
             this.btmGestionCategoria.Size = new System.Drawing.Size(158, 37);
             this.btmGestionCategoria.TabIndex = 14;
@@ -183,7 +184,7 @@
             // 
             // btmGestionMarca
             // 
-            this.btmGestionMarca.Location = new System.Drawing.Point(620, 338);
+            this.btmGestionMarca.Location = new System.Drawing.Point(604, 338);
             this.btmGestionMarca.Name = "btmGestionMarca";
             this.btmGestionMarca.Size = new System.Drawing.Size(158, 37);
             this.btmGestionMarca.TabIndex = 15;
@@ -191,11 +192,22 @@
             this.btmGestionMarca.UseVisualStyleBackColor = true;
             this.btmGestionMarca.Click += new System.EventHandler(this.btmGestionMarca_Click);
             // 
+            // btmVerDetalle
+            // 
+            this.btmVerDetalle.Location = new System.Drawing.Point(790, 338);
+            this.btmVerDetalle.Name = "btmVerDetalle";
+            this.btmVerDetalle.Size = new System.Drawing.Size(107, 37);
+            this.btmVerDetalle.TabIndex = 16;
+            this.btmVerDetalle.Text = "Ver Detalles";
+            this.btmVerDetalle.UseVisualStyleBackColor = true;
+            this.btmVerDetalle.Click += new System.EventHandler(this.btmVerDetalle_Click);
+            // 
             // frmComercio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 458);
+            this.Controls.Add(this.btmVerDetalle);
             this.Controls.Add(this.btmGestionMarca);
             this.Controls.Add(this.btmGestionCategoria);
             this.Controls.Add(this.btmFiltrarAvanzado);
@@ -240,6 +252,7 @@
         private System.Windows.Forms.Button btmFiltrarAvanzado;
         private System.Windows.Forms.Button btmGestionCategoria;
         private System.Windows.Forms.Button btmGestionMarca;
+        private System.Windows.Forms.Button btmVerDetalle;
     }
 }
 
