@@ -103,6 +103,7 @@
             // 
             // txtCodigo
             // 
+            this.txtCodigo.Enabled = false;
             this.txtCodigo.Location = new System.Drawing.Point(109, 61);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
@@ -111,6 +112,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(109, 101);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
@@ -119,6 +121,7 @@
             // 
             // txtMarca
             // 
+            this.txtMarca.Enabled = false;
             this.txtMarca.Location = new System.Drawing.Point(109, 134);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.ReadOnly = true;
@@ -127,6 +130,7 @@
             // 
             // txtCategoria
             // 
+            this.txtCategoria.Enabled = false;
             this.txtCategoria.Location = new System.Drawing.Point(109, 169);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.ReadOnly = true;
@@ -135,6 +139,7 @@
             // 
             // txtPrecio
             // 
+            this.txtPrecio.Enabled = false;
             this.txtPrecio.Location = new System.Drawing.Point(109, 207);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.ReadOnly = true;
@@ -143,10 +148,11 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Location = new System.Drawing.Point(109, 244);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(138, 22);
+            this.txtDescripcion.Size = new System.Drawing.Size(226, 22);
             this.txtDescripcion.TabIndex = 11;
             // 
             // pbxImgArticulo
@@ -154,6 +160,7 @@
             this.pbxImgArticulo.Location = new System.Drawing.Point(356, 61);
             this.pbxImgArticulo.Name = "pbxImgArticulo";
             this.pbxImgArticulo.Size = new System.Drawing.Size(361, 220);
+            this.pbxImgArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImgArticulo.TabIndex = 12;
             this.pbxImgArticulo.TabStop = false;
             // 
@@ -208,7 +215,12 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(818, 497);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "FrmVerDetalleArticulo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVerDetalleArticulo";
             this.Load += new System.EventHandler(this.FrmVerDetalleArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxImgArticulo)).EndInit();

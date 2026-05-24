@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(451, 450);
             this.Controls.Add(this.btmVolverArticulos);
             this.Controls.Add(this.btmEliminarMarca);
             this.Controls.Add(this.btmModificarMarca);

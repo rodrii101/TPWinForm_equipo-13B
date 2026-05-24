@@ -36,6 +36,7 @@ namespace AplicacionComercio
                 txtMarca.Text = articulo.Marca.Descripcion;
                 txtCategoria.Text = articulo.Categoria.Descripcion;
                 txtPrecio.Text = articulo.Precio.ToString();
+                txtDescripcion.Text = articulo.Descripcion;
 
                 cargarImagen();
             }
