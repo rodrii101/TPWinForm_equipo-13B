@@ -44,6 +44,8 @@ namespace AplicacionComercio
                     categorias = new Categoria();
                 }
                 categorias.Descripcion = txtDescripcionCategoria.Text;
+                if (validarDatosCategoria())
+                    return;
                 if (categorias.IdCategoria != 0)
                 {
                     negocioCategoria.modificarCategoria(categorias);
@@ -80,6 +82,15 @@ namespace AplicacionComercio
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+        private bool validarDatosCategoria()
+        {
+            if (string.IsNullOrEmpty(txtDescripcionCategoria.Text))
+            {
+                MessageBox.Show("Debe ingresar una descripcion");
+                return true;
+            }
+            return false;
         }
     }
 }
