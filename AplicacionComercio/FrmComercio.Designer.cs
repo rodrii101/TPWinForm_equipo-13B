@@ -42,7 +42,6 @@
             this.txtFiltradoAvanzado = new System.Windows.Forms.TextBox();
             this.btmFiltrarAvanzado = new System.Windows.Forms.Button();
             this.btmGestionCategoria = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btmGestionMarca = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImageArticulos)).BeginInit();
@@ -182,13 +181,6 @@
             this.btmGestionCategoria.UseVisualStyleBackColor = true;
             this.btmGestionCategoria.Click += new System.EventHandler(this.btmGestionCategoria_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            // 
             // btmGestionMarca
             // 
             this.btmGestionMarca.Location = new System.Drawing.Point(620, 338);
@@ -205,7 +197,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 458);
             this.Controls.Add(this.btmGestionMarca);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btmGestionCategoria);
             this.Controls.Add(this.btmFiltrarAvanzado);
             this.Controls.Add(this.txtFiltradoAvanzado);
@@ -248,7 +239,6 @@
         private System.Windows.Forms.TextBox txtFiltradoAvanzado;
         private System.Windows.Forms.Button btmFiltrarAvanzado;
         private System.Windows.Forms.Button btmGestionCategoria;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btmGestionMarca;
     }
 }

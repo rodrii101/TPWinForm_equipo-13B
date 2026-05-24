@@ -49,20 +49,19 @@ namespace AplicacionComercio
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Marca = (Marca)cbxMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cbxCategoria.SelectedItem;
+                if (validarDatosArticulo())
+                    return;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
                 if(articulo.Imagenes == null)
                     articulo.Imagenes = new List<Imagenes>();
                 if(articulo.Id != 0)
                 {
-                    if(validarDatosArticulo())
-                        return;
+                    
                     negocio.modificarArticulo(articulo);
                     MessageBox.Show("Se modifico correctamente el articulo");
                 }
                 else
                 {
-                    if(validarDatosArticulo())
-                        return;
                     negocio.agregar(articulo);
                     MessageBox.Show("Se agrego correctamente el articulo");
                 }     
@@ -162,13 +161,27 @@ namespace AplicacionComercio
                 MessageBox.Show("Debe agregar una descripcion al articulo");
                 return true;
             }
+            if (string.IsNullOrEmpty(txtPrecio.Text))
+            {
+                MessageBox.Show("Debe ingresar un precio");
+                return true;
+            }
+            decimal precio;
+            if (!decimal.TryParse(txtPrecio.Text, out precio))
+            {
+                MessageBox.Show("Debe ser un numero");
+                return true;
+            }
+            if (precio <= 0)
+            {
+                MessageBox.Show("El precio debe ser mayor a 0");
+                return true;
+            }
             if (string.IsNullOrEmpty(lboxImagen.Text))
             {
                 MessageBox.Show("Debe agregar una URL");
                 return true;
             }
-
-  
             return false;
         }
 

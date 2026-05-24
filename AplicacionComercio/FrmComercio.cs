@@ -28,7 +28,7 @@ namespace AplicacionComercio
             cboCampo.Items.Add("Descripcion");
             cboCampo.Items.Add("Precio");
         }
-        private void cargar()
+        public void cargar()
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             try

@@ -101,7 +101,7 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT MAX(Id) + 1 FROM CATEGORIAS");
+                datos.setearConsulta("SELECT ISNULL(MAX(Id),0) + 1 FROM CATEGORIAS");
                 datos.ejectuarLectura();
                 if (datos.Lector.Read())
                     return Convert.ToInt32(datos.Lector[0]);

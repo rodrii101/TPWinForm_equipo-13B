@@ -99,6 +99,7 @@
             this.Controls.Add(this.btmAgregarMarca);
             this.Controls.Add(this.dgvMarca);
             this.Name = "FrmMarca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMarca";
             this.Load += new System.EventHandler(this.FrmMarca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();

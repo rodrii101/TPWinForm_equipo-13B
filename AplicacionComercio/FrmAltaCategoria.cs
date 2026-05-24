@@ -29,6 +29,9 @@ namespace AplicacionComercio
         private void btmCancelar_Click(object sender, EventArgs e)
         {
             Close();
+            frmComercio comercio = new frmComercio();
+            comercio.ShowDialog();
+            comercio.cargar();
         }
 
         private void btmAgregar_Click(object sender, EventArgs e)
@@ -65,7 +68,7 @@ namespace AplicacionComercio
             try
             {
                 int idIncremental = negocio.contarIdCategorias();
-
+                
                 txtIdCategoria.Text = idIncremental.ToString();
                 if (categorias != null)
                 {

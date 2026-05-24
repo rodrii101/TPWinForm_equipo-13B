@@ -101,6 +101,7 @@
             this.Controls.Add(this.btmCancelar);
             this.Controls.Add(this.btmAgregarMarca);
             this.Name = "FrmAltaMarca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAltaMarca";
             this.Load += new System.EventHandler(this.FrmAltaMarca_Load);
             this.ResumeLayout(false);
