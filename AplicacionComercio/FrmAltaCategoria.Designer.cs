@@ -100,6 +100,9 @@
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.btmCancelar);
             this.Controls.Add(this.btmAgregar);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(309, 260);
+            this.MinimumSize = new System.Drawing.Size(309, 260);
             this.Name = "FrmAltaCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAltaCategoria";

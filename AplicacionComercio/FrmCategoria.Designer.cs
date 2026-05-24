@@ -98,6 +98,9 @@
             this.Controls.Add(this.btmModificarCategoria);
             this.Controls.Add(this.btmAgregarCategoria);
             this.Controls.Add(this.dgvCategoria);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(451, 423);
+            this.MinimumSize = new System.Drawing.Size(451, 423);
             this.Name = "FrmCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCategoria";

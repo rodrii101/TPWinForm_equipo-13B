@@ -217,7 +217,6 @@
             this.Controls.Add(this.lblCodigo);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(818, 497);
-            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "FrmVerDetalleArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

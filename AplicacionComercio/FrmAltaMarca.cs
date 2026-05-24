@@ -37,6 +37,9 @@ namespace AplicacionComercio
                 }
 
                 marcas.Descripcion = txtDescripcionMarca.Text;
+
+                if (validarDatosMarca())
+                    return;
                 
                 if(marcas.Id != 0)
                 {
@@ -80,6 +83,16 @@ namespace AplicacionComercio
         private void btmCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private bool validarDatosMarca()
+        {
+            if (string.IsNullOrEmpty(txtDescripcionMarca.Text))
+            {
+                MessageBox.Show("Debe ingresar una descripcion.");
+                return true;
+            }
+            return false;
         }
     }
 }

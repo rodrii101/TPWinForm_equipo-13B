@@ -224,6 +224,9 @@
             this.Controls.Add(this.picImageArticulos);
             this.Controls.Add(this.dgvArticulo);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1354, 505);
+            this.MinimumSize = new System.Drawing.Size(1354, 505);
             this.Name = "frmComercio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aplicacion Comercio";

@@ -38,7 +38,7 @@
             // 
             // txtDescripcionMarca
             // 
-            this.txtDescripcionMarca.Location = new System.Drawing.Point(134, 100);
+            this.txtDescripcionMarca.Location = new System.Drawing.Point(132, 99);
             this.txtDescripcionMarca.Name = "txtDescripcionMarca";
             this.txtDescripcionMarca.Size = new System.Drawing.Size(100, 22);
             this.txtDescripcionMarca.TabIndex = 18;
@@ -46,7 +46,7 @@
             // txtIdMarca
             // 
             this.txtIdMarca.Enabled = false;
-            this.txtIdMarca.Location = new System.Drawing.Point(134, 52);
+            this.txtIdMarca.Location = new System.Drawing.Point(132, 51);
             this.txtIdMarca.Name = "txtIdMarca";
             this.txtIdMarca.Size = new System.Drawing.Size(100, 22);
             this.txtIdMarca.TabIndex = 17;
@@ -54,7 +54,7 @@
             // lblDescripcionMarca
             // 
             this.lblDescripcionMarca.AutoSize = true;
-            this.lblDescripcionMarca.Location = new System.Drawing.Point(42, 103);
+            this.lblDescripcionMarca.Location = new System.Drawing.Point(40, 102);
             this.lblDescripcionMarca.Name = "lblDescripcionMarca";
             this.lblDescripcionMarca.Size = new System.Drawing.Size(79, 16);
             this.lblDescripcionMarca.TabIndex = 16;
@@ -63,7 +63,7 @@
             // lblIdMarca
             // 
             this.lblIdMarca.AutoSize = true;
-            this.lblIdMarca.Location = new System.Drawing.Point(101, 55);
+            this.lblIdMarca.Location = new System.Drawing.Point(99, 54);
             this.lblIdMarca.Name = "lblIdMarca";
             this.lblIdMarca.Size = new System.Drawing.Size(18, 16);
             this.lblIdMarca.TabIndex = 15;
@@ -71,7 +71,7 @@
             // 
             // btmCancelar
             // 
-            this.btmCancelar.Location = new System.Drawing.Point(176, 162);
+            this.btmCancelar.Location = new System.Drawing.Point(174, 161);
             this.btmCancelar.Name = "btmCancelar";
             this.btmCancelar.Size = new System.Drawing.Size(96, 37);
             this.btmCancelar.TabIndex = 14;
@@ -81,7 +81,7 @@
             // 
             // btmAgregarMarca
             // 
-            this.btmAgregarMarca.Location = new System.Drawing.Point(44, 162);
+            this.btmAgregarMarca.Location = new System.Drawing.Point(42, 161);
             this.btmAgregarMarca.Name = "btmAgregarMarca";
             this.btmAgregarMarca.Size = new System.Drawing.Size(96, 37);
             this.btmAgregarMarca.TabIndex = 13;
@@ -93,13 +93,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 348);
+            this.ClientSize = new System.Drawing.Size(322, 252);
             this.Controls.Add(this.txtDescripcionMarca);
             this.Controls.Add(this.txtIdMarca);
             this.Controls.Add(this.lblDescripcionMarca);
             this.Controls.Add(this.lblIdMarca);
             this.Controls.Add(this.btmCancelar);
             this.Controls.Add(this.btmAgregarMarca);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(340, 299);
+            this.MinimumSize = new System.Drawing.Size(340, 299);
             this.Name = "FrmAltaMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAltaMarca";

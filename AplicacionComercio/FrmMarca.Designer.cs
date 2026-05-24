@@ -98,6 +98,9 @@
             this.Controls.Add(this.btmModificarMarca);
             this.Controls.Add(this.btmAgregarMarca);
             this.Controls.Add(this.dgvMarca);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(469, 497);
+            this.MinimumSize = new System.Drawing.Size(469, 497);
             this.Name = "FrmMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMarca";
